@@ -15,7 +15,15 @@ rime 輸入法 (https://rime.im/) 的微軟傳統排位速成方案
 供習慣使用微軟傳統速成，沒有使用聯想字的用家使用。因為 rime 等開源輸入法，可將微軟傳統速成輸入法選字習慣用於不同平台，例如 MacOS、Android。相關資料可參見以下
 
 
-#### 使用這個方案請參見以下專案
-Windows, MacOS, Lunix : https://github.com/rime
+#### 使用這個方案請參見以下
 
-Android : https://github.com/osfans/trime
+Windows (參考專案 : https://github.com/rime/weasel )
+
+* 安裝軟件後，下載此專案的兩個 yaml 檔案，放入小狼亳安裝路徑的 \data 裡面，再點擊 「【小狼毫】輸入法設定」，選擇「微軟速成」
+
+
+MacOS  (參考專案 : https://github.com/rime/squirrel )
+
+Lunix (參考專案 : https://github.com/rime/ibus-rime )
+
+Android (參考專案 : https://github.com/osfans/trime )
