@@ -10,7 +10,7 @@ schema:
   dependencies:
     - quick
   description: |
-    碼表出自YAHOO輸入法公開資源 
+    碼表按照 windows 10 傳統速成錄入(含增加香港增補字符集字元)
 
 switches:
   - name: ascii_mode
