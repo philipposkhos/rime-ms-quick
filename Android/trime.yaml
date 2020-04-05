@@ -1396,8 +1396,9 @@ preset_keyboards:
     name: 傳統速成
     author: Kho
     height: 50
-    width: 8.4
+    width: 8.3
     keys:
+    - {width: 0.1}
     - {click: "1", long_click: "!"}
     - {click: "2", long_click: "@"}
     - {click: "3", long_click: "#"}
@@ -1410,8 +1411,9 @@ preset_keyboards:
     - {click: "0", long_click: ")"}
     - {click: "-", long_click: "_"}
     - {click: "=", long_click: "+"}
+    - {width: 0.1}
     - {label: "手", click: "q"}
-    - {label: "田", click: "w"}
+    - {label: "田", click: "w", long_click: Up}
     - {label: "水", click: "e"}
     - {label: "口", click: "r"}
     - {label: "廿", click: "t"}
@@ -1422,32 +1424,34 @@ preset_keyboards:
     - {label: "心", click: "p"}
     - {click: "[", long_click: "{"}
     - {click: "]", long_click: "}"}
-    - {width: 3}
-    - {label: "日",  click: "a"}
-    - {label: "尸",  click: "s"}
-    - {label: "木",  click: "d"}
+    - {width: 4}
+    - {label: "日",  click: "a", long_click: Left}
+    - {label: "尸",  click: "s", long_click: Down}
+    - {label: "木",  click: "d", long_click: Right}
     - {label: "火",  click: "f"}
+    /'
     - {label: "土",  click: "g"}
-    - {label: "竹",  click: "h", long_click: Up}
+    - {label: "竹",  click: "h"}
     - {label: "十",  click: "j"}
     - {label: "大",  click: "k"}
     - {label: "中",  click: "l"}
     - {click: ";", long_click: ":"}
     - {click: "\'",long_click: "\""}
-    - {width: 6}
+    - {click: "\", long_click: "\|", width: 4.7}
+    - {click: Tab, width: 7}
     - {label: "符", click: "z"}
     - {label: "難", click: "x"}
     - {label: "金", click: "c"}
     - {label: "女", click: "v"}
-    - {label: "月", click: "b", long_click: Left}
-    - {label: "弓", click: "n", long_click: Down}
-    - {label: "一", click: "m", long_click: Right}
+    - {label: "月", click: "b"}
+    - {label: "弓", click: "n"}
+    - {label: "一", click: "m"}
     - {click: ",", long_click: "<"}
     - {click: ".", long_click: ">"}
     - {click: "/", long_click: "?"}
-    - {click: BackSpace, width: 10.8}
-    - {click: Shift_L, send_bindings: false, width: 11.2}
-    - {click: Mode_switch, long_click: Menu, width: 11.2}
-    - {click: space, width: 50}
-    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 11.2}
-    - {click: Return, long_click: CommitComment, width: 16}
+    - {click: BackSpace, long_click: Escape, width: 10}
+    - {click: Shift_L, send_bindings: false, width: 10}
+    - {click: Mode_switch, long_click: Menu, width: 10}
+    - {click: space, width: 54}
+    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 10}
+    - {click: Return, width: 16}
