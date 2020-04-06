@@ -1396,7 +1396,7 @@ preset_keyboards:
     ascii_mode: 0
     name: 傳統速成
     author: Kho
-    height: 50
+    height: 44
     width: 10
     keys:
 #第一行
@@ -1441,15 +1441,14 @@ preset_keyboards:
     - {label: "月", click: "b"}
     - {label: "弓", click: "n", long_click: "\\"}
     - {label: "一", click: "m", long_click: "|"}
-    - {click: "/", long_click: "?"}
-    - {click: BackSpace}
+    - {click: "/", long_click: "?", width: 8}
+    - {click: BackSpace, width: 12}
 #第五行
-    - {click: Mode_switch, long_click: Menu, width: 10}
     - {click: Keyboard_symbols, long_click: Keyboard_number, width: 10}
-    - {click: space, width: 45}
-    - {click: ",", long_click: "<"}
-    - {click: ".", long_click: ">"}
-    - {click: Return, width: 15}
+    - {click: Mode_switch, long_click: Menu, width: 10}    - {click: space, width: 52}
+    - {click: ",", long_click: "<", width: 8}
+    - {click: ".", long_click: ">", width: 8}
+    - {click: Return, width: 12}
 
 ##全鍵盤佈局
   # ms_quick:
