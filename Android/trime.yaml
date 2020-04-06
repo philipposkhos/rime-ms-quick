@@ -205,7 +205,7 @@ preset_color_schemes:
 
   dark_temple:
     name: 暗堂／Dark Temple
-    author: 佛振 <chen.sst@gmail.com>, based on ir_black
+    author: 佛振 <chen.sst@gmail.com>, based on ir_black 
     text_color: 0xdaf692
     candidate_text_color: 0xe6e3d8
     back_color: 0x222222
@@ -1396,11 +1396,11 @@ preset_keyboards:
     ascii_mode: 0
     name: 傳統速成
     author: Kho
-    height: 44
+    height: 50
     width: 10
     keys:
 #第一行
-    - {click: "1", long_click: "!"}
+    - {click: "1", long_click: "~"}
     - {click: "2", long_click: "@"}
     - {click: "3", long_click: "#"}
     - {click: "4", long_click: "$"}
@@ -1412,7 +1412,7 @@ preset_keyboards:
     - {click: "0", long_click: ")"}
 #第二行
     - {label: "手", click: "q", long_click: Tab}
-    - {label: "田", click: "w", long_click: Up}
+    - {label: "田", click: "w"}
     - {label: "水", click: "e", long_click: "["}
     - {label: "口", click: "r", long_click: "]"}
     - {label: "廿", click: "t", long_click: "{"}
@@ -1422,18 +1422,18 @@ preset_keyboards:
     - {label: "人", click: "o", long_click: "="}
     - {label: "心", click: "p", long_click: "+"}
 #第三行
-    - {width: 5}
-    - {label: "日",  click: "a", long_click: Left}
-    - {label: "尸",  click: "s", long_click: Down}
-    - {label: "木",  click: "d", long_click: Right}
-    - {label: "火",  click: "f"}
-    - {label: "土",  click: "g"}
+    - {width: 4}
+    - {label: "日",  click: "a"}
+    - {label: "尸",  click: "s"}
+    - {label: "木",  click: "d"}
+    - {label: "火",  click: "f", long_click: "<"}
+    - {label: "土",  click: "g", long_click: ">"}
     - {label: "竹",  click: "h", long_click: ";"}
     - {label: "十",  click: "j", long_click: ":"}
     - {label: "大",  click: "k", long_click: "\'"}
     - {label: "中",  click: "l", long_click: "\""}
 #第四行
-    - {click: Shift_L, send_bindings: false}
+    - {click: Shift_L, send_bindings: false, width: 8}
     - {label: "符", click: "z"}
     - {label: "難", click: "x"}
     - {label: "金", click: "c"}
@@ -1441,13 +1441,14 @@ preset_keyboards:
     - {label: "月", click: "b"}
     - {label: "弓", click: "n", long_click: "\\"}
     - {label: "一", click: "m", long_click: "|"}
-    - {click: "/", long_click: "?", width: 8}
-    - {click: BackSpace, width: 12}
+    - {click: "？", long_click: "/",ascii: "?", width: 8}
+    - {click: BackSpace, width: 14}
 #第五行
-    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 10}
+    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 8}
+    - {click: Zenkaku_Hankaku, long_click: Henkan, width: 8}
     - {click: Mode_switch, long_click: Menu, width: 10}
-    - {click: Zenkaku_Hankaku, long_click: Henkan, width: 10}
-    - {click: space, width: 42}
-    - {click: ",", long_click: "<", width: 8}
-    - {click: ".", long_click: ">", width: 8}
+    - {click: space, width: 38, swipe_left: Left, swipe_right: Right}
+    - {click: "！", long_click: "", ascii: "!",width: 8}
+    - {click: "，", long_click: "", ascii: ",",width: 8}
+    - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
