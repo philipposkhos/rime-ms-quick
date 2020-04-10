@@ -4,11 +4,9 @@
 schema:
   schema_id: ms_quick
   name: 傳統速成
-  version: "0.1"
+  version: "1.0"
   author:
     - Kho
-  dependencies:
-    - quick
   description: |
     碼表按照 windows 10 傳統速成錄入(含增加香港增補字符集字元)
 
@@ -20,6 +18,8 @@ switches:
     states: [ 半角, 全角 ]
   - name: simplification
     states: [ 漢字, 汉字 ]
+  - name: _hide_candidate #供 Android Trime 識別，會隱藏手機上的候選欄
+    reset: 1
 
 engine:
   processors:
@@ -47,8 +47,6 @@ engine:
 speller:
   delimiter: " ;"
   alphabet: abcdefghijklmnopqrstuvwxyz
-  max_code_length: 2  # 五碼頂字上屏(轉2測試不行)
-  auto_select: true
 
 translator:
   dictionary: ms_quick
@@ -84,4 +82,4 @@ recognizer:
 
 style:
   font_point: 9 #字號
-  horizontal: true #橫／直排
+  horizontal: false #橫／直排
