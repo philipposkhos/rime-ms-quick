@@ -26,9 +26,10 @@ Windows (參考專案 : https://github.com/rime/weasel )
 Android (參考專案 : https://github.com/osfans/trime )
 
 1. 手機 google play 安裝 同文輸入法
-2. 將兩個 `yaml` 檔案 ( `ms_quick.dict.yaml` 和 `ms_quick.schema.yaml` )，連同 `Android/trime.yaml`，放到 Android 系統的 /rime 目錄中
+2. 將兩個 `yaml` 檔案 ( `ms_quick.dict.yaml` 和 `ms_quick.schema.yaml` )，連同 `Android/trime.custom.yaml`，放到 Android 系統的 /rime 目錄中
 3. 打開 同文輸入法 設置，點擊 「輸入/方案」，勾選「傳統速成」
 4. 回到 同文輸入法 設置的根目錄，點擊「部署」
+5. 部署後如果打中文有閃退，出現不了候選字懸浮窗，可以在同文輸入設置 -> 鍵盤，先關掉「顯示懸浮窗口」，轉應用打一下字，再回到設置將「顯示懸浮窗口」重新打開，就會正常
 
 
 MacOS  (參考專案 : https://github.com/rime/squirrel )
