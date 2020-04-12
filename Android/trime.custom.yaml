@@ -19,36 +19,36 @@ patch:
     - {click: "9", long_click: "("}
     - {click: "0", long_click: ")"}
 # 第二行
-    - {label: "手", click: "q", long_click: Tab}
-    - {label: "田", click: "w", long_click: "`"}
-    - {label: "水", click: "e", long_click: "["}
-    - {label: "口", click: "r", long_click: "]"}
-    - {label: "廿", click: "t", long_click: "{"}
-    - {label: "卜", click: "y", long_click: "}"}
-    - {label: "山", click: "u", long_click: "-"}
-    - {label: "戈", click: "i", long_click: "_"}
-    - {label: "人", click: "o", long_click: "="}
-    - {label: "心", click: "p", long_click: "+"}
+    - {label: "日", click: quick_q, long_click: Tab}
+    - {label: "田", click: quick_w, long_click: "`"}
+    - {label: "水", click: quick_e, long_click: "["}
+    - {label: "口", click: quick_r, long_click: "]"}
+    - {label: "廿", click: quick_t, long_click: "{"}
+    - {label: "卜", click: quick_y, long_click: "}"}
+    - {label: "山", click: quick_u, long_click: "-"}
+    - {label: "戈", click: quick_i, long_click: "_"}
+    - {label: "人", click: quick_o, long_click: "="}
+    - {label: "心", click: quick_p, long_click: "+"}
 # 第三行
     - {width: 5}
-    - {label: "日",  click: "a", long_click: select_all}
-    - {label: "尸",  click: "s", long_click: Left}
-    - {label: "木",  click: "d", long_click: Right}
-    - {label: "火",  click: "f", long_click: "<"}
-    - {label: "土",  click: "g", long_click: ">"}
-    - {label: "竹",  click: "h", long_click: ";"}
-    - {label: "十",  click: "j", long_click: ":"}
-    - {label: "大",  click: "k", long_click: "\'"}
-    - {label: "中",  click: "l", long_click: "\""}
+    - {label: "日",  click: quick_a, long_click: select_all}
+    - {label: "尸",  click: quick_s, long_click: Left}
+    - {label: "木",  click: quick_d, long_click: Right}
+    - {label: "火",  click: quick_f, long_click: "<"}
+    - {label: "土",  click: quick_g, long_click: ">"}
+    - {label: "竹",  click: quick_h, long_click: ";"}
+    - {label: "十",  click: quick_j, long_click: ":"}
+    - {label: "大",  click: quick_k, long_click: "\'"}
+    - {label: "中",  click: quick_l, long_click: "\""}
 # 第四行
     - {click: Escape, long_click: Henkan, width: 10}
-    - {label: "符", click: "z", long_click: undo}
-    - {label: "難", click: "x", long_click: cut}
-    - {label: "金", click: "c", long_click: copy}
-    - {label: "女", click: "v", long_click: paste}
-    - {label: "月", click: "b", long_click: redo}
-    - {label: "弓", click: "n", long_click: "\\"}
-    - {label: "一", click: "m", long_click: "|"}
+    - {label: "符", click: quick_z, long_click: undo}
+    - {label: "難", click: quick_x, long_click: cut}
+    - {label: "金", click: quick_c, long_click: copy}
+    - {label: "女", click: quick_v, long_click: paste}
+    - {label: "月", click: quick_b, long_click: redo}
+    - {label: "弓", click: quick_n, long_click: "\\"}
+    - {label: "一", click: quick_m, long_click: "|"}
     - {click: "？", long_click: "/", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
@@ -79,36 +79,36 @@ patch:
     - {click: "9", long_click: "("}
     - {click: "0", long_click: ")"}
 # 第二行
-    - {label: "日", click: "q", long_click: Tab}
-    - {label: "田", click: "w", long_click: "`"}
-    - {label: "水", click: "e", long_click: "["}
-    - {label: "口", click: "r", long_click: "]"}
-    - {label: "廿", click: "t", long_click: "{"}
-    - {label: "卜", click: "y", long_click: "}"}
-    - {label: "山", click: "u", long_click: "-"}
-    - {label: "戈", click: "i", long_click: "_"}
-    - {label: "人", click: "o", long_click: "="}
-    - {label: "心", click: "p", long_click: "+"}
+    - {click: "q", long_click: Tab}
+    - {click: "w", long_click: "`"}
+    - {click: "e", long_click: "["}
+    - {click: "r", long_click: "]"}
+    - {click: "t", long_click: "{"}
+    - {click: "y", long_click: "}"}
+    - {click: "u", long_click: "-"}
+    - {click: "i", long_click: "_"}
+    - {click: "o", long_click: "="}
+    - {click: "p", long_click: "+"}
 # 第三行
     - {width: 5}
-    - {label: "日",  click: "a", long_click: select_all}
-    - {label: "尸",  click: "s", long_click: Left}
-    - {label: "木",  click: "d", long_click: Right}
-    - {label: "火",  click: "f", long_click: "<"}
-    - {label: "土",  click: "g", long_click: ">"}
-    - {label: "竹",  click: "h", long_click: ";"}
-    - {label: "十",  click: "j", long_click: ":"}
-    - {label: "大",  click: "k", long_click: "\'"}
-    - {label: "中",  click: "l", long_click: "\""}
+    - {click: "a", long_click: select_all}
+    - {click: "s", long_click: Left}
+    - {click: "d", long_click: Right}
+    - {click: "f", long_click: "<"}
+    - {click: "g", long_click: ">"}
+    - {click: "h", long_click: ";"}
+    - {click: "j", long_click: ":"}
+    - {click: "k", long_click: "\'"}
+    - {click: "l", long_click: "\""}
 # 第四行
     - {click: Shift_L, send_bindings: false, width: 10}
-    - {label: "符", click: "z", long_click: undo}
-    - {label: "難", click: "x", long_click: cut}
-    - {label: "金", click: "c", long_click: copy}
-    - {label: "女", click: "v", long_click: paste}
-    - {label: "月", click: "b", long_click: redo}
-    - {label: "弓", click: "n", long_click: "\\"}
-    - {label: "一", click: "m", long_click: "|"}
+    - {click: "z", long_click: undo}
+    - {click: "x", long_click: cut}
+    - {click: "c", long_click: copy}
+    - {click: "v", long_click: paste}
+    - {click: "b", long_click: redo}
+    - {click: "n", long_click: "\\"}
+    - {click: "m", long_click: "|"}
     - {click: "？", long_click: "/", ascii: "?", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
@@ -147,28 +147,39 @@ patch:
     - {start: "", move: ' ≡ ', end: ""}
 
 #功能鍵定制
-  "preset_keys/BackSpace":
-    label: "⌫"
-    repeatable: true
-    send: BackSpace
-  "preset_keys/Shift_L":
-    label: "⇧"
-    send: Shift_L
-    shift_lock: long
-  "preset_keys/Tab":
-    label: "↹"
-    send: Tab
-  "preset_keys/Return":
-    label: "↵"
-    send: Return
-  "preset_keys/Keyboard_quick": 
-    label: "西"
-    send: Eisu_toggle
-    select: .default
-  "preset_keys/Keyboard_latin":
-    label: "中"
-    send: Eisu_toggle
-    select: latin
+  "preset_keys/BackSpace": {label: "⌫", repeatable: true, send: BackSpace}
+  "preset_keys/Shift_L": {label: "⇧", send: Shift_L, shift_lock: long}
+  "preset_keys/Tab": {label: "↹", send: Tab}
+  "preset_keys/Return": {label: "↵", send: Return}
+  "preset_keys/Keyboard_quick": {label: "西", send: Eisu_toggle, select: .default}
+  "preset_keys/Keyboard_latin": {label: "中", send: Eisu_toggle, select: latin}
+  "preset_keys/space": {repeatable: false, functional: false, preview: "⎵", send: space}
+  "preset_keys/quick_q": {label: "日", preview : "日", send: q}
+  "preset_keys/quick_w": {label: "田", preview : "田", send: w}
+  "preset_keys/quick_e": {label: "水", preview : "水", send: e}
+  "preset_keys/quick_r": {label: "口", preview : "口", send: r}
+  "preset_keys/quick_t": {label: "廿", preview : "廿", send: t}
+  "preset_keys/quick_y": {label: "卜", preview : "卜", send: y}
+  "preset_keys/quick_u": {label: "山", preview : "山", send: u}
+  "preset_keys/quick_i": {label: "戈", preview : "戈", send: i}
+  "preset_keys/quick_o": {label: "人", preview : "人", send: o}
+  "preset_keys/quick_p": {label: "心", preview : "心", send: p}
+  "preset_keys/quick_a": {label: "日", preview : "日", send: a}
+  "preset_keys/quick_s": {label: "尸", preview : "尸", send: s}
+  "preset_keys/quick_d": {label: "木", preview : "木", send: d}
+  "preset_keys/quick_f": {label: "火", preview : "火", send: f}
+  "preset_keys/quick_g": {label: "土", preview : "土", send: g}
+  "preset_keys/quick_h": {label: "竹", preview : "竹", send: h}
+  "preset_keys/quick_j": {label: "十", preview : "十", send: j}
+  "preset_keys/quick_k": {label: "大", preview : "大", send: k}
+  "preset_keys/quick_l": {label: "中", preview : "中", send: l}
+  "preset_keys/quick_z": {label: "符", preview : "符", send: z}
+  "preset_keys/quick_x": {label: "難", preview : "難", send: x}
+  "preset_keys/quick_c": {label: "金", preview : "金", send: c}
+  "preset_keys/quick_v": {label: "女", preview : "女", send: v}
+  "preset_keys/quick_b": {label: "月", preview : "月", send: b}
+  "preset_keys/quick_n": {label: "弓", preview : "弓", send: n}
+  "preset_keys/quick_m": {label: "一", preview : "一", send: m}
 
 #添加自定義西文鍵盤
   "style/keyboards": 
