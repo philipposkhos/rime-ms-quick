@@ -52,9 +52,9 @@ patch:
     - {click: "？", long_click: "/", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
-    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 12}
+    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 14}
     - {click: Keyboard_latin, long_click: Zenkaku_Hankaku, width: 14}
-    - {click: space, width: 46, long_click: Menu}
+    - {click: space, width: 44, long_click: Menu}
     - {click: "，", long_click: "～", width: 8}
     - {click: "．", long_click: "。", width: 8}
     - {click: Return, width: 12}
@@ -112,9 +112,9 @@ patch:
     - {click: "？", long_click: "/", ascii: "?", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
-    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 12}
+    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 14}
     - {click: Keyboard_quick, long_click: Zenkaku_Hankaku, width: 14}
-    - {click: space, width: 46, long_click: Menu}
+    - {click: space, width: 44, long_click: Menu}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
