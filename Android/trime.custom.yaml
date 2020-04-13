@@ -19,7 +19,7 @@ patch:
     - {click: "9", long_click: "("}
     - {click: "0", long_click: ")"}
 # 第二行
-    - {label: "日", click: quick_q, long_click: Tab}
+    - {label: "手", click: quick_q, long_click: Tab}
     - {label: "田", click: quick_w, long_click: "`"}
     - {label: "水", click: quick_e, long_click: "["}
     - {label: "口", click: quick_r, long_click: "]"}
