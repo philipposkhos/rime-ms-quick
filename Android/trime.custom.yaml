@@ -30,16 +30,17 @@ patch:
     - {label: "人", click: quick_o, long_click: "="}
     - {label: "心", click: quick_p, long_click: "+"}
 # 第三行
-    - {width: 5}
-    - {label: "日",  click: quick_a, long_click: select_all}
-    - {label: "尸",  click: quick_s, long_click: Left}
-    - {label: "木",  click: quick_d, long_click: Right}
-    - {label: "火",  click: quick_f, long_click: "<"}
-    - {label: "土",  click: quick_g, long_click: ">"}
-    - {label: "竹",  click: quick_h, long_click: ";"}
-    - {label: "十",  click: quick_j, long_click: ":"}
-    - {label: "大",  click: quick_k, long_click: "\'"}
-    - {label: "中",  click: quick_l, long_click: "\""}
+    - {click: Left, long_click: Home, width: 5}
+    - {label: "日", click: quick_a, long_click: select_all}
+    - {label: "尸", click: quick_s, long_click: Up}
+    - {label: "木", click: quick_d, long_click: Down}
+    - {label: "火", click: quick_f, long_click: "<"}
+    - {label: "土", click: quick_g, long_click: ">"}
+    - {label: "竹", click: quick_h, long_click: ";"}
+    - {label: "十", click: quick_j, long_click: ":"}
+    - {label: "大", click: quick_k, long_click: "\'"}
+    - {label: "中", click: quick_l, long_click: "\""}
+    - {click: End, long_click: Right, width: 5}
 # 第四行
     - {click: Escape, long_click: Henkan, width: 10}
     - {label: "符", click: quick_z, long_click: undo}
@@ -49,7 +50,7 @@ patch:
     - {label: "月", click: quick_b, long_click: redo}
     - {label: "弓", click: quick_n, long_click: "\\"}
     - {label: "一", click: quick_m, long_click: "|"}
-    - {click: "？", long_click: "/", width: 8}
+    - {click: "/", long_click: "？", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
     - {click: Keyboard_symbols, long_click: Keyboard_number, width: 14}
@@ -90,16 +91,17 @@ patch:
     - {click: "o", long_click: "="}
     - {click: "p", long_click: "+"}
 # 第三行
-    - {width: 5}
+    - {click: Left, long_click: Home, width: 5,}
     - {click: "a", long_click: select_all}
-    - {click: "s", long_click: Left}
-    - {click: "d", long_click: Right}
+    - {click: "s", long_click: Up}
+    - {click: "d", long_click: Down}
     - {click: "f", long_click: "<"}
     - {click: "g", long_click: ">"}
     - {click: "h", long_click: ";"}
     - {click: "j", long_click: ":"}
     - {click: "k", long_click: "\'"}
     - {click: "l", long_click: "\""}
+    - {click: End, long_click: Right, width: 5}
 # 第四行
     - {click: Shift_L, send_bindings: false, width: 10}
     - {click: "z", long_click: undo}
@@ -109,7 +111,7 @@ patch:
     - {click: "b", long_click: redo}
     - {click: "n", long_click: "\\"}
     - {click: "m", long_click: "|"}
-    - {click: "？", long_click: "/", ascii: "?", width: 8}
+    - {click: "/", long_click: "?", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
     - {click: Keyboard_symbols, long_click: Keyboard_number, width: 14}
@@ -150,7 +152,9 @@ patch:
   "preset_keys/BackSpace": {label: "⌫", repeatable: true, send: BackSpace}
   "preset_keys/Shift_L": {label: "⇧", send: Shift_L, shift_lock: long}
   "preset_keys/Tab": {label: "↹", send: Tab}
-  "preset_keys/Return": {label: "↵", send: Return}
+  "preset_keys/Return": {label: "⏎", send: Return}
+  "preset_keys/Home": {label: ⇱, send: Home}
+  "preset_keys/End": {label: ⇲, send: End}
   "preset_keys/Keyboard_quick": {label: "西", send: Eisu_toggle, select: .default}
   "preset_keys/Keyboard_latin": {label: "中", send: Eisu_toggle, select: latin}
   "preset_keys/space": {repeatable: false, functional: false, preview: "⎵", send: space}
