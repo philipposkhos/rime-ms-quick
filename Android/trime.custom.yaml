@@ -158,7 +158,7 @@ patch:
   "preset_keys/Keyboard_quick": {label: "西", send: Eisu_toggle, select: .default}
   "preset_keys/Keyboard_latin": {label: "中", send: Eisu_toggle, select: latin}
   "preset_keys/space": {repeatable: false, functional: false, preview: "⎵", send: space}
-  "preset_keys/quick_q": {label: "日", preview : "日", send: q}
+  "preset_keys/quick_q": {label: "手", preview : "手", send: q}
   "preset_keys/quick_w": {label: "田", preview : "田", send: w}
   "preset_keys/quick_e": {label: "水", preview : "水", send: e}
   "preset_keys/quick_r": {label: "口", preview : "口", send: r}
