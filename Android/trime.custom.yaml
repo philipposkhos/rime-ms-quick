@@ -57,7 +57,7 @@ patch:
     - {click: Keyboard_latin, long_click: Zenkaku_Hankaku, width: 14}
     - {click: space, width: 44, long_click: Menu}
     - {click: "，", long_click: "～", width: 8}
-    - {click: "．", long_click: "。", width: 8}
+    - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
 
 # 傳統速成西文鍵位佈局
