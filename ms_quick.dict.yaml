@@ -5,7 +5,7 @@
 name: ms_quick
 version: "1.0"
 sort: original
-use_preset_vocabulary: false
+use_preset_vocabulary: true
 ...
 日	a
 曰	a

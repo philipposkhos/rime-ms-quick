@@ -38,7 +38,8 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - script_translator
+    - table_translator
+    - script_translator@zouci
     - reverse_lookup_translator
   filters:
     - simplifier
@@ -49,14 +50,26 @@ speller:
   alphabet: abcdefghijklmnopqrstuvwxyz
 
 translator:
+  initial_quality: 100000
   dictionary: ms_quick
+  enable_encoder: false
+  encode_commit_history: false
   enable_completion: false
   enable_user_dict: false
+  enable_sentence: false
   preedit_format:
     - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
   comment_format:
     - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
 
+zouci:
+  initial_quality: 1
+  dictionary: ms_quick
+  preedit_format:
+    - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
+  comment_format:
+    - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
+    
 reverse_lookup:
   dictionary: luna_pinyin
   prefix: "`"
@@ -81,5 +94,5 @@ recognizer:
     reverse_lookup: "`[a-z]*$"
 
 style:
-  font_point: 9 #字號
+  font_point: 12 #字號
   horizontal: false #橫／直排
