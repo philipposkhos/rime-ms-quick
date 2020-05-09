@@ -4,7 +4,7 @@ patch:
     ascii_mode: 0
     name: 傳統速成
     author: Kho
-    height: 50
+    height: 44
     width: 10
     keys:
 # 第一行
@@ -53,19 +53,19 @@ patch:
     - {click: "/", long_click: "？", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
-    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 14}
-    - {click: Keyboard_latin, long_click: IME_switch, width: 14}
+    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
+    - {click: Keyboard_ms_quick_latin, long_click: IME_switch, width: 14}
     - {click: space, width: 44, long_click: Menu}
     - {click: "，", long_click: "～", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
 
 # 傳統速成西文鍵位佈局
-  "preset_keyboards/latin":
+  "preset_keyboards/ms_quick_latin":
     ascii_mode: 1
     name: 傳統速成西文
     author: Kho
-    height: 50
+    height: 44
     width: 10
     keys:
 # 第一行
@@ -114,12 +114,99 @@ patch:
     - {click: "/", long_click: "?", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
-    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 14}
+    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
     - {click: Keyboard_quick, long_click: IME_switch, width: 14}
     - {click: space, width: 44, long_click: Menu}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
+
+# 傳統速成數字鍵位佈局
+  ms_quick_number:
+    name: 傳統速成數字
+    author: Kho
+    width: 20
+    height: 44
+    keys:
+# 第一行
+    - {click: '+'}
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '%'}
+# 第二行
+    - {click: '-'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {label: "⎵", click: space}
+# 第三行
+    - {click: '*'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: BackSpace}
+# 第四行
+    - {click: Keyboard_default, long_click: Keyboard_ms_quick_symbols}
+    - {click: '='}
+    - {click: '0'}
+    - {click: '.'}
+    - {click: Return}
+
+# 傳統速成符號鍵位佈局
+  ms_quick_symbols:
+    name: 符號
+    author: kho
+    ascii_mode: 1
+    width: 10
+    height: 44
+    keys:
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: '0'}
+    - {click: '~',long_click: '`'}
+    - {click: '!'}
+    - {click: '@'}
+    - {click: '#'}
+    - {click: '$'}
+    - {click: '￥'}
+    - {click: '%'}
+    - {click: '^'}
+    - {click: '&'}
+    - {click: '*'}
+    - {click: '(', long_click: '{'}
+    - {click: ')', long_click: '}'}
+    - {click: '[', long_click: '【'}
+    - {click: ']', long_click: '】'}
+    - {click: '「', long_click: '『'}
+    - {click: '」', long_click: '』'}
+    - {click: '、', ascii: '\', long_click: '|'}
+    - {click: '/', long_click: '√'}
+    - {click: ':'}
+    - {click: ';'}
+    - {click: '+'}
+    - {click: '-', long_click: '_'}
+    - {click: '='}
+    - {click: '〈', long_click: '《', ascii: '<'}
+    - {click: '〉', long_click: '》', ascii: '>'}
+    - {click: '“', ascii: '"', long_click: '‘'}
+    - {click: '”', ascii: "'", long_click: '’'}
+    - {click: '，', ascii: ','}
+    - {click: '？', ascii: '?'}
+    - {click: BackSpace, long_click: Escape}
+    - {click: Keyboard_default, long_click: Menu, width: 15}
+    - {click: Keyboard_ms_quick_number, long_click: Color_switch}
+    - {click: space, width: 40}
+    - {click: '。', ascii: '.'}
+    - {click: Hide, long_click: Delete}
+    - {click: Return, long_click: select_all, width: 15}
 
 # 佈局調整
   "style/candidate_text_size": 21  #候选字体大小
@@ -156,7 +243,9 @@ patch:
   "preset_keys/Home": {label: ⇱, send: Home}
   "preset_keys/End": {label: ⇲, send: End}
   "preset_keys/Keyboard_quick": {label: "西", send: Eisu_toggle, select: .default}
-  "preset_keys/Keyboard_latin": {label: "中", send: Eisu_toggle, select: latin}
+  "preset_keys/Keyboard_ms_quick_latin": {label: "中", send: Eisu_toggle, select: ms_quick_latin}
+  "preset_keys/Keyboard_ms_quick_number": {label: "數字", send: Eisu_toggle, select: ms_quick_number}
+  "preset_keys/Keyboard_ms_quick_symbols": {label: "符號", send: Eisu_toggle, select: ms_quick_symbols}
   "preset_keys/space": {repeatable: false, functional: false, preview: "⎵", send: space}
   "preset_keys/quick_q": {label: "手", preview : "手", send: q}
   "preset_keys/quick_w": {label: "田", preview : "田", send: w}
@@ -190,6 +279,6 @@ patch:
     - .default
     - default
     - letter
-    - number
-    - symbols
-    - latin
+    - ms_quick_number
+    - ms_quick_symbols
+    - ms_quick_latin
