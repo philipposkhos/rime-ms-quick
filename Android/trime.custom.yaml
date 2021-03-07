@@ -40,7 +40,7 @@ patch:
     - {label: "十", click: quick_j, long_click: ":"}
     - {label: "大", click: quick_k, long_click: "\'"}
     - {label: "中", click: quick_l, long_click: "\""}
-    - {click: End, long_click: Right, width: 5}
+    - {click: Right, long_click: End, width: 5}
 # 第四行
     - {click: Escape, long_click: Henkan, width: 10}
     - {label: "符", click: quick_z, long_click: undo}
@@ -101,7 +101,7 @@ patch:
     - {click: "j", long_click: ":"}
     - {click: "k", long_click: "\'"}
     - {click: "l", long_click: "\""}
-    - {click: End, long_click: Right, width: 5}
+    - {click: Right, long_click: End, width: 5}
 # 第四行
     - {click: Shift_L, send_bindings: false, width: 10}
     - {click: "z", long_click: undo}
