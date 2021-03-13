@@ -122,7 +122,7 @@ patch:
     - {click: Return, width: 12}
 
 # 傳統速成數字鍵位佈局
-  ms_quick_number:
+  "preset_keyboards/ms_quick_number":
     name: 傳統速成數字
     author: Kho
     width: 20
@@ -154,7 +154,7 @@ patch:
     - {click: Return}
 
 # 傳統速成符號鍵位佈局
-  ms_quick_symbols:
+  "preset_keyboards/ms_quick_symbols":
     name: 符號
     author: kho
     ascii_mode: 1
