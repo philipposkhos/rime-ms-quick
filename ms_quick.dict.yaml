@@ -5,7 +5,12 @@
 name: ms_quick
 version: "1.0"
 sort: original
-use_preset_vocabulary: false
+use_preset_vocabulary: true
+#以下爲導入詞庫 如不需要指定詞庫請在前在 # 
+import_tables:
+  - quickcang5.jyut #粵語詞庫
+  - quickcang5.voc_luna #朙月拼音詞庫
+  - quickcang5.simp_voc #簡化字詞庫
 ...
 日	a
 曰	a
