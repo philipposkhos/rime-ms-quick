@@ -126,7 +126,7 @@ patch:
     name: 傳統速成數字
     author: Kho
     width: 20
-    height: 44
+    height: 55
     keys:
 # 第一行
     - {click: '+'}
