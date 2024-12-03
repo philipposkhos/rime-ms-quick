@@ -4,11 +4,10 @@ patch:
     ascii_mode: 0
     name: 傳統速成
     author: Kho
-    height: 44
     width: 10
     keys:
 # 第一行
-    - {click: "1", long_click: "！", height: 45}
+    - {click: "1", long_click: "！", height: 46}
     - {click: "2", long_click: "@"}
     - {click: "3", long_click: "#"}
     - {click: "4", long_click: "$"}
@@ -19,7 +18,7 @@ patch:
     - {click: "9", long_click: "("}
     - {click: "0", long_click: ")"}
 # 第二行
-    - {label: "手", click: quick_q, long_click: Tab}
+    - {label: "手", click: quick_q, long_click: Tab, height: 46}
     - {label: "田", click: quick_w, long_click: "`"}
     - {label: "水", click: quick_e, long_click: "["}
     - {label: "口", click: quick_r, long_click: "]"}
@@ -30,7 +29,7 @@ patch:
     - {label: "人", click: quick_o, long_click: "="}
     - {label: "心", click: quick_p, long_click: "+"}
 # 第三行
-    - {click: Left, long_click: Home, width: 5}
+    - {click: Left, long_click: Home, width: 5, height: 46}
     - {label: "日", click: quick_a, long_click: select_all}
     - {label: "尸", click: quick_s, long_click: Up}
     - {label: "木", click: quick_d, long_click: Down}
@@ -42,7 +41,7 @@ patch:
     - {label: "中", click: quick_l, long_click: "\""}
     - {click: Right, long_click: End, width: 5}
 # 第四行
-    - {click: Escape, long_click: Henkan, width: 10}
+    - {click: Escape, long_click: Henkan, width: 10, height: 46}
     - {label: "符", click: quick_z, long_click: undo}
     - {label: "難", click: quick_x, long_click: cut}
     - {label: "金", click: quick_c, long_click: copy}
@@ -53,23 +52,23 @@ patch:
     - {click: "/", long_click: "？", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
-    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
+    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14, height: 46}
     - {click: Keyboard_ms_quick_latin, long_click: IME_switch, width: 14}
     - {click: space, width: 44, long_click: Menu}
     - {click: "，", long_click: "～", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
+    
 
 # 傳統速成西文鍵位佈局
   "preset_keyboards/ms_quick_latin":
     ascii_mode: 1
     name: 傳統速成西文
     author: Kho
-    height: 44
     width: 10
     keys:
 # 第一行
-    - {click: "1", long_click: "!", height: 45}
+    - {click: "1", long_click: "!", height: 46}
     - {click: "2", long_click: "@"}
     - {click: "3", long_click: "#"}
     - {click: "4", long_click: "$"}
@@ -80,7 +79,7 @@ patch:
     - {click: "9", long_click: "("}
     - {click: "0", long_click: ")"}
 # 第二行
-    - {click: "q", long_click: Tab}
+    - {click: "q", long_click: Tab, height: 46}
     - {click: "w", long_click: "`"}
     - {click: "e", long_click: "["}
     - {click: "r", long_click: "]"}
@@ -91,7 +90,7 @@ patch:
     - {click: "o", long_click: "="}
     - {click: "p", long_click: "+"}
 # 第三行
-    - {click: Left, long_click: Home, width: 5,}
+    - {click: Left, long_click: Home, width: 5, height: 46}
     - {click: "a", long_click: select_all}
     - {click: "s", long_click: Up}
     - {click: "d", long_click: Down}
@@ -103,7 +102,7 @@ patch:
     - {click: "l", long_click: "\""}
     - {click: Right, long_click: End, width: 5}
 # 第四行
-    - {click: Shift_L, send_bindings: false, width: 10}
+    - {click: Shift_L, send_bindings: false, width: 10, height: 46}
     - {click: "z", long_click: undo}
     - {click: "x", long_click: cut}
     - {click: "c", long_click: copy}
@@ -114,19 +113,22 @@ patch:
     - {click: "/", long_click: "?", width: 8}
     - {click: BackSpace, width: 12}
 # 第五行
-    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
+    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14, height: 46}
     - {click: Keyboard_quick, long_click: IME_switch, width: 14}
     - {click: space, width: 44, long_click: Menu}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
+    
+    
+
 
 # 傳統速成數字鍵位佈局
   "preset_keyboards/ms_quick_number":
     name: 傳統速成數字
     author: Kho
     width: 20
-    height: 55
+    height: 60
     keys:
 # 第一行
     - {click: '+'}
@@ -159,8 +161,9 @@ patch:
     author: kho
     ascii_mode: 1
     width: 10
-    height: 44
+    height: 46
     keys:
+# 第一行
     - {click: '1'}
     - {click: '2'}
     - {click: '3'}
@@ -171,6 +174,7 @@ patch:
     - {click: '8'}
     - {click: '9'}
     - {click: '0'}
+# 第二行
     - {click: '~',long_click: '`'}
     - {click: '!'}
     - {click: '@'}
@@ -181,6 +185,7 @@ patch:
     - {click: '^'}
     - {click: '&'}
     - {click: '*'}
+# 第三行
     - {click: '(', long_click: '{'}
     - {click: ')', long_click: '}'}
     - {click: '[', long_click: '【'}
@@ -191,6 +196,7 @@ patch:
     - {click: '/', long_click: '√'}
     - {click: ':'}
     - {click: ';'}
+# 第四行
     - {click: '+'}
     - {click: '-', long_click: '_'}
     - {click: '='}
@@ -200,6 +206,7 @@ patch:
     - {click: '”', ascii: "'", long_click: '’'}
     - {click: '，', ascii: ','}
     - {click: '？', ascii: '?'}
+# 第五行
     - {click: BackSpace, long_click: Escape}
     - {click: Keyboard_default, long_click: Menu, width: 15}
     - {click: Keyboard_ms_quick_number, long_click: Color_switch}
@@ -211,8 +218,9 @@ patch:
 # 佈局調整
   "style/candidate_text_size": 21  #候选字体大小
   "style/key_text_size": 18 #按键字体大小
-  "style/vertical_gap": 2 #行距
-  "style/horizontal_gap": 2 #水平间距改为0
+  "style/vertical_gap": 10 #行距
+  "style/horizontal_gap": 5 #水平间距改为0
+  "style/round_corner": 10
   "style/label_text_size": 16 #懸浮候選數字大小
 
 # 自定義懸浮窗
