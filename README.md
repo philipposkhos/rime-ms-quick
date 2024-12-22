@@ -25,7 +25,7 @@ Windows (參考專案 : https://github.com/rime/weasel )
 
 Android (參考專案 : https://github.com/osfans/trime )
 
-1. 手機 google play 安裝 同文輸入法
+1. 手機 google play 安裝 同文輸入法 (google play 已下架。此方案是適配 3.1.3 版本，可以在 github 下載: [版本 3.1.3](https://github.com/osfans/trime/releases/download/3.1.3/trime-3.1.3-20190930.apk))
 2. 將兩個 `yaml` 檔案 ( `ms_quick.dict.yaml` 和 `ms_quick.schema.yaml` )，連同 `Android/trime.custom.yaml`，放到 Android 系統的 /rime 目錄中
 3. 打開 同文輸入法 設置，點擊 「輸入/方案」，勾選「傳統速成」
 4. 回到 同文輸入法 設置的根目錄，點擊「部署」
