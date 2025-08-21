@@ -8,10 +8,6 @@ rime 輸入法 (https://rime.im/) 的微軟傳統排位速成方案
 * 沒有聯想字
 * 不會自組字詞
 
->不足 : 當直接輸入單字碼字時(例如 手, 火等)，無法像 Windows 輸入法那樣直接用 space 輸入，需要像選字那樣按 1 字。如有解決的建議，麻煩留言。
-
-
-
 供習慣使用微軟傳統速成，沒有使用聯想字的用家使用。因為 rime 等開源輸入法，可將微軟傳統速成輸入法選字習慣用於不同平台，例如 MacOS、Android。相關資料可參見以下
 
 
@@ -35,3 +31,7 @@ Android (參考專案 : https://github.com/osfans/trime )
 MacOS  (參考專案 : https://github.com/rime/squirrel )
 
 Lunix (參考專案 : https://github.com/rime/ibus-rime )
+
+#### 繁簡輸入位置不同問題解決
+
+可以將 opencc/ 的兩個檔案複製到 \data\opencc\ 中，這是將本來 opencc 中繁轉簡「一對多」都改成「一對一」，這樣轉了簡體輸入後，速度的候選字排位仍能保持一致
