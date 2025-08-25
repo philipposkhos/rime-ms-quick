@@ -43,7 +43,6 @@ engine:
     - reverse_lookup_translator
   filters:
     - simplifier
-    - uniquifier
 
 speller:
   delimiter: " ;"
