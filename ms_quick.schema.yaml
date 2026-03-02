@@ -74,6 +74,9 @@ key_binder:
 menu:
   page_size: 9
 
+simplifier:
+  tips: all # 簡化字模式下提示對應的傳統漢字
+
 recognizer:
   import_preset: default
   patterns:
