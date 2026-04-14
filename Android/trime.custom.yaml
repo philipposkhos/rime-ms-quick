@@ -55,7 +55,7 @@ patch:
     - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14, height: 46}
     - {click: Keyboard_ms_quick_latin, long_click: IME_switch, width: 14}
     - {click: space, width: 44, long_click: Menu}
-    - {click: "，", long_click: "～", width: 8}
+    - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
     
