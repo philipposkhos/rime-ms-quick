@@ -1,0 +1,403 @@
+# 放到同文「用戶資料夾」根目錄，不要連 Android/3.3 子資料夾一起放
+# encoding: utf-8
+config_version: "3.3"
+name: 傳統速成
+author: Kho
+
+style:
+  candidate_text_size: 21
+  key_text_size: 18
+  key_long_text_size: 10
+  label_text_size: 16
+  symbol_text_size: 9
+  vertical_gap: 10
+  horizontal_gap: 5
+  round_corner: 10
+  key_height: 46
+  keyboard_height: 280
+  keyboard_height_land: 220
+  candidate_view_height: 28
+  candidate_padding: 5
+  # 3.3 長按氣泡會依格子大小自動撐滿，要小必須縮寬高，不能只改字號
+  popup_text_size: 12
+  popup_height: 26
+  popup_width: 22
+  popup_key_height: 22
+  popup_bottom_margin: 6
+
+window:
+  insets:
+    vertical: 4
+    horizontal: 4
+  item_padding:
+    horizontal: 4
+  corner_radius: 3
+  border: 0
+  shadow: 8.0
+  alpha: 0.87
+  foreground:
+    label_font_size: 16
+    text_font_size: 21
+    comment_font_size: 14
+
+fallback_colors:
+  candidate_text_color: text_color
+
+preset_color_schemes:
+  default:
+    name: 預設
+    author: Kho
+    back_color: 0xe4e7e9
+    border_color: 0xc1c7ca
+    candidate_separator_color: 0xc1c7ca
+    candidate_text_color: 0x5a676e
+    comment_text_color: 0x7b868c
+    hilited_back_color: 0xccd3d7da
+    hilited_candidate_back_color: 0xd3d7da
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0x000000
+    hilited_key_back_color: 0xd3d7da
+    hilited_key_symbol_color: 0x000000
+    hilited_key_text_color: 0x000000
+    hilited_off_key_back_color: 0xd3d7da
+    hilited_off_key_text_color: 0x000000
+    hilited_on_key_back_color: 0xd3d7da
+    hilited_on_key_text_color: 0x000000
+    hilited_text_color: 0x23948e
+    key_back_color: 0xeceff1
+    key_symbol_color: 0x5f6b73
+    key_text_color: 0x37474f
+    keyboard_back_color: 0xffffff
+    label_color: 0x000000
+    off_key_back_color: 0xd3d7da
+    off_key_text_color: 0x000000
+    on_key_back_color: 0x23948e
+    on_key_text_color: 0x37474f
+    preview_back_color: 0x55bfbfbf
+    preview_text_color: 0x23948e
+    shadow_color: 0x000000
+    text_color: 0x5a676e
+    text_back_color: 0xcce4e7e9
+
+  aqua:
+    name: 碧水／Aqua
+    text_color: 0x000000
+    back_color: 0xeeeeec
+    border_color: 0xe0e0e0
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xd4d4d4
+    hilited_candidate_text_color: 0xffffff
+    hilited_candidate_back_color: 0x0a3afa
+
+  luna:
+    name: 明月／Luna
+    text_color: 0x000000
+    back_color: 0xffffff
+    border_color: 0xcccccc
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xffff7f
+    hilited_candidate_text_color: 0xffffff
+    hilited_candidate_back_color: 0x000000
+
+  ink:
+    name: 墨池／Ink
+    text_color: 0x000000
+    back_color: 0xffffff
+    border_color: 0x000000
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xdddddd
+    hilited_candidate_text_color: 0xffffff
+    hilited_candidate_back_color: 0x000000
+
+  google:
+    name: 谷歌／Google
+    text_color: 0x666666
+    candidate_text_color: 0x000000
+    back_color: 0xFFFFFF
+    border_color: 0xE2E2E2
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_candidate_back_color: 0x3975CE
+
+  youtube:
+    name: YouTube
+    text_color: 0x000000
+    back_color: 0xdedede
+    border_color: 0xdedede
+    label_color: 0x000000
+    hilited_text_color: 0xc30d23
+    hilited_back_color: 0xffffff
+    candidate_text_color: 0x000000
+    comment_text_color: 0x000000
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    hilited_candidate_back_color: 0xc30d23
+
+  dark_temple:
+    name: 暗堂／Dark Temple
+    text_color: 0xdaf692
+    candidate_text_color: 0xe6e3d8
+    back_color: 0x222222
+    border_color: 0x222222
+    hilited_text_color: 0x9acfff
+    hilited_back_color: 0x222222
+    hilited_candidate_text_color: 0xdaf692
+    hilited_candidate_back_color: 0x333333
+    comment_text_color: 0xff6c60
+
+preset_keys:
+  BackSpace: {label: "⌫", repeatable: true, send: BackSpace}
+  Shift_L: {label: "⇧", send: Shift_L, shift_lock: long}
+  Tab: {label: "↹", send: Tab}
+  Return: {label: "⏎", send: Return}
+  Home: {label: ⇱, send: Home}
+  End: {label: ⇲, send: End}
+  Left: {label: "←", send: Left}
+  Right: {label: "→", send: Right}
+  Up: {label: "↑", send: Up}
+  Down: {label: "↓", send: Down}
+  Escape: {label: Esc, send: Escape}
+  Delete: {label: 刪除, send: Delete}
+  Hide: {label: 隱藏, send: BACK}
+  Menu: {label: 方案, send: MENU}
+  IME_switch: {label: "🌐", send: LANGUAGE_SWITCH}
+  Color_switch: {label: 配色, send: PROG_RED}
+  Henkan: {toggle: simplification, send: Mode_switch, states: [漢字, 汉字]}
+  clipboard_window: {label: 剪貼, send: function, command: clipboard_window, option: "0"}
+  select_all: {label: 全選, send: Control+a}
+  cut: {label: 剪下, send: Control+x}
+  copy: {label: 複製, send: Control+c}
+  paste: {label: 貼上, send: Control+v}
+  undo: {label: 撤銷, send: Control+z}
+  redo: {label: 重做, send: Control+Shift+z}
+  Keyboard_default: {label: 中, send: Eisu_toggle, select: .default}
+  Keyboard_quick: {label: 中, send: Eisu_toggle, select: .default}
+  Keyboard_ms_quick_latin: {label: 西, send: Eisu_toggle, select: ms_quick_latin}
+  Keyboard_ms_quick_number: {label: 數字, send: Eisu_toggle, select: ms_quick_number}
+  Keyboard_ms_quick_symbols: {label: 符號, send: Eisu_toggle, select: ms_quick_symbols}
+  space: {repeatable: false, functional: false, preview: "⎵", send: space}
+  quick_q: {label: "手", preview: "手", send: q}
+  quick_w: {label: "田", preview: "田", send: w}
+  quick_e: {label: "水", preview: "水", send: e}
+  quick_r: {label: "口", preview: "口", send: r}
+  quick_t: {label: "廿", preview: "廿", send: t}
+  quick_y: {label: "卜", preview: "卜", send: y}
+  quick_u: {label: "山", preview: "山", send: u}
+  quick_i: {label: "戈", preview: "戈", send: i}
+  quick_o: {label: "人", preview: "人", send: o}
+  quick_p: {label: "心", preview: "心", send: p}
+  quick_a: {label: "日", preview: "日", send: a}
+  quick_s: {label: "尸", preview: "尸", send: s}
+  quick_d: {label: "木", preview: "木", send: d}
+  quick_f: {label: "火", preview: "火", send: f}
+  quick_g: {label: "土", preview: "土", send: g}
+  quick_h: {label: "竹", preview: "竹", send: h}
+  quick_j: {label: "十", preview: "十", send: j}
+  quick_k: {label: "大", preview: "大", send: k}
+  quick_l: {label: "中", preview: "中", send: l}
+  quick_z: {label: "符", preview: "符", send: z}
+  quick_x: {label: "難", preview: "難", send: x}
+  quick_c: {label: "金", preview: "金", send: c}
+  quick_v: {label: "女", preview: "女", send: v}
+  quick_b: {label: "月", preview: "月", send: b}
+  quick_n: {label: "弓", preview: "弓", send: n}
+  quick_m: {label: "一", preview: "一", send: m}
+
+preset_keyboards:
+  # 沒對上方案 id 時仍有鍵盤可顯示
+  default:
+    import_preset: ms_quick
+  ms_quick:
+    ascii_mode: 0
+    ascii_keyboard: ms_quick_latin
+    name: 傳統速成
+    author: Kho
+    width: 10
+    height: 46
+    keyboard_height: 280
+    lock: true
+    keys:
+    - {click: "1", long_click: "！", height: 46}
+    - {click: "2", long_click: "@"}
+    - {click: "3", long_click: "#"}
+    - {click: "4", long_click: "$"}
+    - {click: "5", long_click: "%"}
+    - {click: "6", long_click: "^"}
+    - {click: "7", long_click: "&"}
+    - {click: "8", long_click: "*"}
+    - {click: "9", long_click: "("}
+    - {click: "0", long_click: ")"}
+    - {label: "手", click: quick_q, long_click: Tab, height: 46}
+    - {label: "田", click: quick_w, long_click: "`"}
+    - {label: "水", click: quick_e, long_click: "["}
+    - {label: "口", click: quick_r, long_click: "]"}
+    - {label: "廿", click: quick_t, long_click: "{"}
+    - {label: "卜", click: quick_y, long_click: "}"}
+    - {label: "山", click: quick_u, long_click: "-"}
+    - {label: "戈", click: quick_i, long_click: "_"}
+    - {label: "人", click: quick_o, long_click: "="}
+    - {label: "心", click: quick_p, long_click: "+"}
+    - {click: Left, long_click: Home, width: 5, height: 46}
+    - {label: "日", click: quick_a, long_click: select_all}
+    - {label: "尸", click: quick_s, long_click: Up}
+    - {label: "木", click: quick_d, long_click: Down}
+    - {label: "火", click: quick_f, long_click: "<"}
+    - {label: "土", click: quick_g, long_click: ">"}
+    - {label: "竹", click: quick_h, long_click: ";"}
+    - {label: "十", click: quick_j, long_click: ":"}
+    - {label: "大", click: quick_k, long_click: "\'"}
+    - {label: "中", click: quick_l, long_click: "\""}
+    - {click: Right, long_click: End, width: 5}
+    - {click: clipboard_window, long_click: Henkan, width: 10, height: 46}
+    - {label: "符", click: quick_z, long_click: undo}
+    - {label: "難", click: quick_x, long_click: cut}
+    - {label: "金", click: quick_c, long_click: copy}
+    - {label: "女", click: quick_v, long_click: paste}
+    - {label: "月", click: quick_b, long_click: redo}
+    - {label: "弓", click: quick_n, long_click: "\\"}
+    - {label: "一", click: quick_m, long_click: "|"}
+    - {click: "/", long_click: "？", width: 8}
+    - {click: BackSpace, width: 12}
+    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14, height: 46}
+    - {click: Keyboard_ms_quick_latin, long_click: IME_switch, width: 14}
+    - {click: space, width: 44, long_click: Menu}
+    - {click: ",", long_click: "~", width: 8}
+    - {click: ".", long_click: "。", width: 8}
+    - {click: Return, width: 12}
+  ms_quick_latin:
+    ascii_mode: 1
+    name: 傳統速成西文
+    author: Kho
+    width: 10
+    height: 46
+    keyboard_height: 280
+    keys:
+    - {click: "1", long_click: "!", height: 46}
+    - {click: "2", long_click: "@"}
+    - {click: "3", long_click: "#"}
+    - {click: "4", long_click: "$"}
+    - {click: "5", long_click: "%"}
+    - {click: "6", long_click: "^"}
+    - {click: "7", long_click: "&"}
+    - {click: "8", long_click: "*"}
+    - {click: "9", long_click: "("}
+    - {click: "0", long_click: ")"}
+    - {click: "q", long_click: Tab, height: 46}
+    - {click: "w", long_click: "`"}
+    - {click: "e", long_click: "["}
+    - {click: "r", long_click: "]"}
+    - {click: "t", long_click: "{"}
+    - {click: "y", long_click: "}"}
+    - {click: "u", long_click: "-"}
+    - {click: "i", long_click: "_"}
+    - {click: "o", long_click: "="}
+    - {click: "p", long_click: "+"}
+    - {click: Left, long_click: Home, width: 5, height: 46}
+    - {click: "a", long_click: select_all}
+    - {click: "s", long_click: Up}
+    - {click: "d", long_click: Down}
+    - {click: "f", long_click: "<"}
+    - {click: "g", long_click: ">"}
+    - {click: "h", long_click: ";"}
+    - {click: "j", long_click: ":"}
+    - {click: "k", long_click: "\'"}
+    - {click: "l", long_click: "\""}
+    - {click: Right, long_click: End, width: 5}
+    - {click: Shift_L, send_bindings: false, width: 10, height: 46}
+    - {click: "z", long_click: undo}
+    - {click: "x", long_click: cut}
+    - {click: "c", long_click: copy}
+    - {click: "v", long_click: paste}
+    - {click: "b", long_click: redo}
+    - {click: "n", long_click: "\\"}
+    - {click: "m", long_click: "|"}
+    - {click: "/", long_click: "?", width: 8}
+    - {click: BackSpace, width: 12}
+    - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14, height: 46}
+    - {click: Keyboard_quick, long_click: IME_switch, width: 14}
+    - {click: space, width: 44, long_click: Menu}
+    - {click: ",", long_click: "~", width: 8}
+    - {click: ".", long_click: "。", width: 8}
+    - {click: Return, width: 12}
+  ms_quick_number:
+    name: 傳統速成數字
+    author: Kho
+    width: 20
+    height: 60
+    keyboard_height: 280
+    keys:
+    - {click: '+'}
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '%'}
+    - {click: '-'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {label: "⎵", click: space}
+    - {click: '*'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: BackSpace}
+    - {click: Keyboard_default, long_click: Keyboard_ms_quick_symbols}
+    - {click: '='}
+    - {click: '0'}
+    - {click: '.'}
+    - {click: Return}
+  ms_quick_symbols:
+    name: 符號
+    author: kho
+    ascii_mode: 1
+    width: 10
+    height: 46
+    keyboard_height: 280
+    keys:
+    - {click: '1'}
+    - {click: '2'}
+    - {click: '3'}
+    - {click: '4'}
+    - {click: '5'}
+    - {click: '6'}
+    - {click: '7'}
+    - {click: '8'}
+    - {click: '9'}
+    - {click: '0'}
+    - {click: '~', long_click: '`'}
+    - {click: '!'}
+    - {click: '@'}
+    - {click: '#'}
+    - {click: '$'}
+    - {click: '￥'}
+    - {click: '%'}
+    - {click: '^'}
+    - {click: '&'}
+    - {click: '*'}
+    - {click: '(', long_click: '{'}
+    - {click: ')', long_click: '}'}
+    - {click: '[', long_click: '【'}
+    - {click: ']', long_click: '】'}
+    - {click: '「', long_click: '『'}
+    - {click: '」', long_click: '』'}
+    - {click: '、', ascii: '\', long_click: '|'}
+    - {click: '/', long_click: '√'}
+    - {click: ':'}
+    - {click: ';'}
+    - {click: '+'}
+    - {click: '-', long_click: '_'}
+    - {click: '='}
+    - {click: '〈', long_click: '《', ascii: '<'}
+    - {click: '〉', long_click: '》', ascii: '>'}
+    - {click: '“', ascii: '"', long_click: '‘'}
+    - {click: '”', ascii: "'", long_click: '’'}
+    - {click: '，', ascii: ','}
+    - {click: '？', ascii: '?'}
+    - {click: BackSpace, long_click: Escape}
+    - {click: Keyboard_default, long_click: Color_switch, width: 15}
+    - {click: Keyboard_ms_quick_number, long_click: clipboard_window}
+    - {click: space, width: 40}
+    - {click: '。', ascii: '.'}
+    - {click: Hide, long_click: Delete}
+    - {click: Return, long_click: select_all, width: 15}

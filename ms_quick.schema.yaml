@@ -18,8 +18,6 @@ switches:
     states: [ 半角, 全角 ]
   - name: simplification
     states: [ 漢字, 汉字 ]
-  - name: _hide_candidate #供 Android Trime 識別，會隱藏手機上的候選欄
-    reset: 1
 
 engine:
   processors:

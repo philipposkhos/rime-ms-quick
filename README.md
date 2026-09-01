@@ -21,16 +21,33 @@ Windows (參考專案 : https://github.com/rime/weasel )
 
 Android (參考專案 : https://github.com/osfans/trime )
 
-1. 手機 google play 安裝 同文輸入法 (google play 已下架。此方案是適配 3.1.3 版本，可以在 github 下載: [版本 3.1.3](https://github.com/osfans/trime/releases/download/3.1.3/trime-3.1.3-20190930.apk))
-2. 將兩個 `yaml` 檔案 ( `ms_quick.dict.yaml` 和 `ms_quick.schema.yaml` )，連同 `Android/trime.custom.yaml`，放到 Android 系統的 /rime 目錄中
-3. 打開 同文輸入法 設置，點擊 「輸入/方案」，勾選「傳統速成」
-4. 回到 同文輸入法 設置的根目錄，點擊「部署」
-5. 部署後如果打中文有閃退，出現不了候選字懸浮窗，可以在同文輸入設置 -> 鍵盤，先關掉「顯示懸浮窗口」，轉應用打一下字，再回到設置將「顯示懸浮窗口」重新打開，就會正常
+兩個版本的**方案／詞庫相同**（`ms_quick.schema.yaml`、`ms_quick.dict.yaml`），差在鍵盤設定檔，請依同文版本選資料夾，**不要混用**。
 
+共用步驟：把檔案放到同文「用戶資料夾」根目錄（舊版常見路徑是 `/sdcard/rime`；3.3 請到同文設定查看「用戶資料夾」），勾選方案「傳統速成」，再部署。
+
+##### 同文 3.1.3
+
+適配檔在 `Android/3.1.3/`。Google Play 已下架，可在 GitHub 下載：[3.1.3 APK](https://github.com/osfans/trime/releases/download/3.1.3/trime-3.1.3-20190930.apk)
+
+1. 複製 `ms_quick.dict.yaml`、`ms_quick.schema.yaml`，以及 `Android/3.1.3/trime.custom.yaml`
+2. 放到用戶資料夾根目錄（只要 `trime.custom.yaml` 這個檔名，不要連 `Android/3.1.3/` 資料夾一起放）
+3. 同文設置 → 輸入／方案，勾選「傳統速成」
+4. 回到設置根目錄，點「部署」
+5. 若打中文閃退、候選懸浮窗出不來：設置 → 鍵盤，先關掉「顯示懸浮窗口」，換應用打一下字，再打開該選項
+
+##### 同文 3.3
+
+適配檔在 `Android/3.3/`。3.1.3 的 `trime.custom.yaml` 在 3.3 **不能用**（舊懸浮窗／鍵盤格式已失效），請改用獨立主題。
+
+1. 複製 `ms_quick.dict.yaml`、`ms_quick.schema.yaml`，以及 `Android/3.3/ms_quick.trime.yaml`
+2. 放到用戶資料夾根目錄（只要 `ms_quick.trime.yaml` 這個檔名，不要連 `Android/3.3/` 資料夾一起放）
+3. 同文設置 → 鍵盤樣式 → 主題，選「傳統速成」（鍵盤佈局綁在主題上，配色只能選這個主題裡有的）
+4. 必須要打開候選視窗 (同文設置 → 候選視窗，選始終顯示)，才能見到候選字，並用 空白鍵 翻頁
+5. 方案勾選「傳統速成」，然後部署
 
 MacOS  (參考專案 : https://github.com/rime/squirrel )
 
-Lunix (參考專案 : https://github.com/rime/ibus-rime )
+Linux (參考專案 : https://github.com/rime/ibus-rime )
 
 #### 繁簡輸入位置不同問題解決
 
