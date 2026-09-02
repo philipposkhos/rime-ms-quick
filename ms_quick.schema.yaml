@@ -49,6 +49,7 @@ translator:
   dictionary: ms_quick
   enable_completion: false
   enable_user_dict: false
+  enable_sentence: false
   preedit_format:
     - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
   comment_format:
