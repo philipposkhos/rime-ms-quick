@@ -4,7 +4,7 @@
 schema:
   schema_id: ms_quick
   name: 傳統速成
-  version: "1.0"
+  version: "1.1"
   author:
     - Kho
   description: |
@@ -36,7 +36,7 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - script_translator
+    - table_translator
     - reverse_lookup_translator
   filters:
     - simplifier
