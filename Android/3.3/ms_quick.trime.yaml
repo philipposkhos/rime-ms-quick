@@ -43,12 +43,68 @@ window:
     horizontal: 4
   corner_radius: 3
   border: 0
-  shadow: 8.0
+  shadow: 0
   alpha: 0.87
   foreground:
     label_font_size: 14
     text_font_size: 20
     comment_font_size: 0
+
+tool_bar:
+  button_spacing: 12
+  buttons:
+    - foreground:
+        style: "🎨"
+        font_size: 20
+      action: Color_switch
+    - foreground:
+        option_styles: ["漢", "简"]
+        font_size: 16
+      action: 繁簡切換
+    - foreground:
+        option_styles: ["半", "全"]
+        font_size: 16
+      action: 半全切換
+    - foreground:
+        style: "📋"
+        font_size: 20
+      action: clipboard_window
+    - foreground:
+        style: "🙂"
+        font_size: 20
+      action: liquid_keyboard_switch
+
+liquid_keyboard:
+  row: 5
+  row_land: 4
+  key_height: 40
+  key_height_land: 40
+  single_width: 52
+  vertical_gap: 4
+  margin_x: 4
+  fixed_key_bar:
+    position: bottom
+    keys:
+      - liquid_keyboard_exit
+      - space
+      - BackSpace
+      - Return
+  keyboards: [history, emoji, cn, ascii]
+  history:
+    name: 常用
+    type: HISTORY
+  emoji:
+    name: 表情
+    type: SINGLE
+    keys: "😀😁😂🤣😃😄😅😆😉😊😋😎😍😘🥰😗🙂🤗🤔😐😑😶🙄😏😣😥😮🤐😯😪😫🥱😴😌😛😜😝🤤😒😓😔😕🙃🤑😲☹🙁😖😞😟😤😢😭😦😧😨😩🤯😬😰😱🥵🥶😳🤪😵🥴😠😡🤬😷🤒🤕🤢🤮🤧😇🥳🥺🤠🤡🤥🤫🤭🧐🤓😈👿💀💩😺😸😹😻😼😽🙀😿😾🙈🙉🙊👍👎👌✌️🤞🤝🙏💪👀"
+  cn:
+    name: 中文
+    type: SINGLE
+    keys: "，。？！：；、·…—～「」『』【】（）《》〈〉“”‘’￥"
+  ascii:
+    name: 英文
+    type: SINGLE
+    keys: ",.?!:;@#&*-+=/\\|<>()[]{}\"'`~"
 
 fallback_colors:
   candidate_text_color: text_color
@@ -57,41 +113,81 @@ preset_color_schemes:
   default:
     name: 預設
     author: Kho
-    keyboard_back_color: 0xdfe1e5
-    root_background: 0xdfe1e5
-    key_back_color: 0xffffff
-    key_text_color: 0x202124
-    key_symbol_color: 0x5f6368
-    off_key_back_color: 0xdadce0
-    off_key_text_color: 0x202124
-    off_key_symbol_color: 0x5f6368
-    on_key_back_color: 0x1a73e8
-    on_key_text_color: 0xffffff
-    on_key_symbol_color: 0xffffff
-    hilited_key_back_color: 0xd2e3fc
-    hilited_key_text_color: 0x174ea6
-    hilited_key_symbol_color: 0x174ea6
-    hilited_off_key_back_color: 0xc0c4c8
-    hilited_off_key_text_color: 0x202124
-    hilited_on_key_back_color: 0x174ea6
-    hilited_on_key_text_color: 0xffffff
-    back_color: 0xffffff
-    candidate_background: 0xffffff
-    border_color: 0xdadce0
-    text_color: 0x202124
-    text_back_color: 0xffffff
-    candidate_text_color: 0x202124
-    comment_text_color: 0x5f6368
-    label_color: 0x5f6368
-    candidate_separator_color: 0xe8eaed
-    hilited_text_color: 0x1a73e8
-    hilited_back_color: 0xe8f0fe
-    hilited_candidate_text_color: 0x174ea6
-    hilited_candidate_back_color: 0xe8f0fe
-    hilited_comment_text_color: 0x1a73e8
-    hilited_label_color: 0x1a73e8
-    preview_back_color: 0x3c4043
-    preview_text_color: 0xffffff
+    keyboard_back_color: 0x202124
+    root_background: 0x202124
+    key_back_color: 0x3c4043
+    key_text_color: 0xe8eaed
+    key_symbol_color: 0x9aa0a6
+    off_key_back_color: 0x2d2f31
+    off_key_text_color: 0xe8eaed
+    off_key_symbol_color: 0x9aa0a6
+    on_key_back_color: 0x8ab4f8
+    on_key_text_color: 0x202124
+    on_key_symbol_color: 0x202124
+    hilited_key_back_color: 0x5f6368
+    hilited_key_text_color: 0xe8eaed
+    hilited_key_symbol_color: 0xe8eaed
+    hilited_off_key_back_color: 0x3c4043
+    hilited_off_key_text_color: 0xe8eaed
+    hilited_on_key_back_color: 0xaecbfa
+    hilited_on_key_text_color: 0x202124
+    back_color: 0x202124
+    candidate_background: 0x202124
+    border_color: 0x3c4043
+    text_color: 0xe8eaed
+    text_back_color: 0x202124
+    candidate_text_color: 0xe8eaed
+    comment_text_color: 0x9aa0a6
+    label_color: 0x9aa0a6
+    candidate_separator_color: 0x3c4043
+    hilited_text_color: 0x8ab4f8
+    hilited_back_color: 0x3c4043
+    hilited_candidate_text_color: 0x8ab4f8
+    hilited_candidate_back_color: 0x3c4043
+    hilited_comment_text_color: 0x8ab4f8
+    hilited_label_color: 0x8ab4f8
+    preview_back_color: 0x5f6368
+    preview_text_color: 0xe8eaed
+    shadow_color: 0x000000
+
+  steam:
+    name: Steam
+    author: Kho
+    keyboard_back_color: 0x171a21
+    root_background: 0x171a21
+    key_back_color: 0x2a475e
+    key_text_color: 0xc7d5e0
+    key_symbol_color: 0x8f98a0
+    off_key_back_color: 0x1b2838
+    off_key_text_color: 0xc7d5e0
+    off_key_symbol_color: 0x8f98a0
+    on_key_back_color: 0x66c0f4
+    on_key_text_color: 0x171a21
+    on_key_symbol_color: 0x171a21
+    hilited_key_back_color: 0x417a9b
+    hilited_key_text_color: 0xffffff
+    hilited_key_symbol_color: 0xffffff
+    hilited_off_key_back_color: 0x2a475e
+    hilited_off_key_text_color: 0xc7d5e0
+    hilited_on_key_back_color: 0xa4d7f5
+    hilited_on_key_text_color: 0x171a21
+    back_color: 0x171a21
+    candidate_background: 0x171a21
+    border_color: 0x2a475e
+    text_color: 0xc7d5e0
+    text_back_color: 0x171a21
+    candidate_text_color: 0xc7d5e0
+    comment_text_color: 0x8f98a0
+    label_color: 0x8f98a0
+    candidate_separator_color: 0x2a475e
+    hilited_text_color: 0x66c0f4
+    hilited_back_color: 0x1b2838
+    hilited_candidate_text_color: 0x66c0f4
+    hilited_candidate_back_color: 0x1b2838
+    hilited_comment_text_color: 0x66c0f4
+    hilited_label_color: 0x66c0f4
+    preview_back_color: 0x2a475e
+    preview_text_color: 0xc7d5e0
     shadow_color: 0x000000
 
   aqua:
@@ -178,8 +274,12 @@ preset_keys:
   Menu: {label: 方案, send: MENU}
   IME_switch: {label: "🌐", send: LANGUAGE_SWITCH}
   Color_switch: {label: 配色, send: PROG_RED}
-  Henkan: {toggle: simplification, send: Mode_switch, states: [漢字, 汉字]}
+  中西切換: {toggle: ascii_mode, send: Mode_switch, states: [中, 西]}
+  半全切換: {toggle: full_shape, send: Mode_switch, states: [半, 全]}
+  繁簡切換: {toggle: simplification, send: Mode_switch, states: [漢, 汉]}
   clipboard_window: {label: 剪貼, send: function, command: clipboard_window, option: "0"}
+  liquid_keyboard_switch: {label: 🙂, send: function, command: liquid_keyboard, option: "常用"}
+  liquid_keyboard_exit: {label: 返回, send: function, command: liquid_keyboard, option: "-1"}
   select_all: {label: 全選, send: Control+a}
   cut: {label: 剪下, send: Control+x}
   copy: {label: 複製, send: Control+c}
@@ -265,7 +365,7 @@ preset_keyboards:
     - {label: "大", click: quick_k, long_click: "'"}
     - {label: "中", click: quick_l, long_click: "\""}
     - {click: Right, long_click: End, width: 5}
-    - {click: clipboard_window, long_click: Henkan, width: 10}
+    - {click: 繁簡切換, long_click: clipboard_window, width: 10}
     - {label: "符", click: quick_z, long_click: undo}
     - {label: "難", click: quick_x, long_click: cut}
     - {label: "金", click: quick_c, long_click: copy}
