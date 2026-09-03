@@ -1,0 +1,13 @@
+# 只給 Android 同文：放到用戶資料夾根目錄，和 ms_quick.schema.yaml 同層
+# 電腦版不要放這份，否則方案選單會少掉中西切換
+# encoding: utf-8
+patch:
+
+  switches:
+    # - name: ascii_mode   # 展開選單裡的中西切換 ascii_mode，在手機上不會切換鍵盤顯示，拿掉以免導致誤會
+    #   # reset: 0 (1是英文)
+    #   states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半形, 全形 ]
+    - name: simplification
+      states: [ 漢字, 汉字 ]

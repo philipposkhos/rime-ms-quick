@@ -58,13 +58,13 @@ tool_bar:
         font_size: 20
       action: Color_switch
     - foreground:
-        option_styles: ["漢", "简"]
+        option_styles: ["漢", "汉"]
         font_size: 16
-      action: 繁簡切換
+      action: simplification_switch
     - foreground:
         option_styles: ["半", "全"]
         font_size: 16
-      action: 半全切換
+      action: fullshape_switch
     - foreground:
         style: "📋"
         font_size: 20
@@ -274,9 +274,8 @@ preset_keys:
   Menu: {label: 方案, send: MENU}
   IME_switch: {label: "🌐", send: LANGUAGE_SWITCH}
   Color_switch: {label: 配色, send: PROG_RED}
-  中西切換: {toggle: ascii_mode, send: Mode_switch, states: [中, 西]}
-  半全切換: {toggle: full_shape, send: Mode_switch, states: [半, 全]}
-  繁簡切換: {toggle: simplification, send: Mode_switch, states: [漢, 汉]}
+  fullshape_switch: {toggle: full_shape, send: SWITCH_CHARSET, states: [半, 全]}
+  simplification_switch: {toggle: simplification, send: SWITCH_CHARSET, states: [漢, 汉]}
   clipboard_window: {label: 剪貼, send: function, command: clipboard_window, option: "0"}
   liquid_keyboard_switch: {label: 🙂, send: function, command: liquid_keyboard, option: "常用"}
   liquid_keyboard_exit: {label: 返回, send: function, command: liquid_keyboard, option: "-1"}
@@ -365,7 +364,7 @@ preset_keyboards:
     - {label: "大", click: quick_k, long_click: "'"}
     - {label: "中", click: quick_l, long_click: "\""}
     - {click: Right, long_click: End, width: 5}
-    - {click: 繁簡切換, long_click: clipboard_window, width: 10}
+    - {click: simplification_switch, long_click: clipboard_window, width: 10}
     - {label: "符", click: quick_z, long_click: undo}
     - {label: "難", click: quick_x, long_click: cut}
     - {label: "金", click: quick_c, long_click: copy}
@@ -377,7 +376,7 @@ preset_keyboards:
     - {click: BackSpace, width: 12}
     - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
     - {click: Keyboard_ms_quick_latin, long_click: IME_switch, width: 14}
-    - {click: space, width: 44, long_click: Menu}
+    - {click: space, width: 44}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
@@ -433,7 +432,7 @@ preset_keyboards:
     - {click: BackSpace, width: 12}
     - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
     - {click: Keyboard_quick, long_click: IME_switch, width: 14}
-    - {click: space, width: 44, long_click: Menu}
+    - {click: space, width: 44}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}

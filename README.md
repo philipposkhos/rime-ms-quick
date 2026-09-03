@@ -36,14 +36,15 @@ Android (參考專案 : https://github.com/osfans/trime )
 5. 若打中文閃退、候選懸浮窗出不來：設置 → 鍵盤，先關掉「顯示懸浮窗口」，換應用打一下字，再打開該選項
 
 ##### 同文 3.3
+適配檔在 `Android/3.3/`。
 
-適配檔在 `Android/3.3/`。3.1.3 的 `trime.custom.yaml` 在 3.3 **不能用**（舊懸浮窗／鍵盤格式已失效），請改用獨立主題。
-
-1. 複製 `ms_quick.dict.yaml`、`ms_quick.schema.yaml`，以及 `Android/3.3/ms_quick.trime.yaml`
-2. 放到用戶資料夾根目錄（只要 `ms_quick.trime.yaml` 這個檔名，不要連 `Android/3.3/` 資料夾一起放）
+1. 複製 `ms_quick.dict.yaml`、`ms_quick.schema.yaml`，以及 `Android/3.3/` 裡的 `ms_quick.trime.yaml`、`ms_quick.custom.yaml`
+2. 放到用戶資料夾根目錄（只要這兩個檔名，不要連 `Android/3.3/` 資料夾一起放），與 `ms_quick.schema.yaml` 同層
 3. 同文設置 → 鍵盤樣式 → 主題，選「傳統速成」（鍵盤佈局綁在主題上，配色只能選這個主題裡有的）
 4. 必須要打開候選視窗 (同文設置 → 候選視窗，選始終顯示)，才能見到候選字，並用 空白鍵 翻頁
 5. 方案勾選「傳統速成」，然後部署 (同文設置  → 配置 → 立即同步使用者資料)
+
+`ms_quick.custom.yaml` **只給 Android**：會拿掉方案選單裡的「中文／西文」。同文上點這個開關只改 `ascii_mode`，不會切到英文鍵盤，容易誤會壞了，所以隱藏。Windows／Mac／Linux **不要**放這份，否則桌面方案選單會少掉中西切換。
 
 MacOS  (參考專案 : https://github.com/rime/squirrel )
 
