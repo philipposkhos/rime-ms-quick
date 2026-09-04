@@ -1,6 +1,6 @@
 # 放到同文「用戶資料夾」根目錄，不要連 Android/3.3 子資料夾一起放
 # encoding: utf-8
-config_version: "3.6"
+config_version: "3.7"
 name: 傳統速成
 author: Kho
 
@@ -14,9 +14,9 @@ style:
   vertical_gap: 10
   horizontal_gap: 4
   round_corner: 8
-  key_height: 44
-  keyboard_height: 280
-  keyboard_height_land: 220
+  key_height: 40
+  keyboard_height: 240
+  keyboard_height_land: 188
   keyboard_padding: 3
   keyboard_padding_bottom: 0
   vertical_correction: -20
@@ -28,7 +28,7 @@ style:
   popup_width: 28
   popup_key_height: 26
   # 約等於實際鍵高，氣泡底貼齊鍵頂
-  popup_bottom_margin: 56
+  popup_bottom_margin: 48
 
 preedit:
   horizontal_padding: 0
@@ -328,9 +328,9 @@ preset_keyboards:
     name: 傳統速成
     author: Kho
     width: 10
-    height: 44
-    keyboard_height: 280
-    keyboard_height_land: 220
+    height: 40
+    keyboard_height: 240
+    keyboard_height_land: 188
     lock: true
     keys:
     - {click: "1", long_click: "！"}
@@ -385,9 +385,9 @@ preset_keyboards:
     name: 傳統速成西文
     author: Kho
     width: 10
-    height: 44
-    keyboard_height: 280
-    keyboard_height_land: 220
+    height: 40
+    keyboard_height: 240
+    keyboard_height_land: 188
     keys:
     - {click: "1", long_click: "!"}
     - {click: "2", long_click: "@"}
@@ -440,9 +440,9 @@ preset_keyboards:
     name: 傳統速成數字
     author: Kho
     width: 20
-    height: 44
-    keyboard_height: 280
-    keyboard_height_land: 220
+    height: 40
+    keyboard_height: 240
+    keyboard_height_land: 188
     keys:
     - {click: '+'}
     - {click: '1'}
@@ -469,9 +469,9 @@ preset_keyboards:
     author: kho
     ascii_mode: 1
     width: 10
-    height: 44
-    keyboard_height: 280
-    keyboard_height_land: 220
+    height: 40
+    keyboard_height: 240
+    keyboard_height_land: 188
     keys:
     - {click: '1'}
     - {click: '2'}

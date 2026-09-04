@@ -44,7 +44,7 @@ engine:
 speller:
   delimiter: " ;"
   alphabet: abcdefghijklmnopqrstuvwxyz
-  # max_code_length: 2 # 打開的話，輸入超過兩個字碼後會直接將首字上屏
+  max_code_length: 2 # 打開的話，輸入超過兩個字碼後會直接將首字上屏
 
 translator:
   dictionary: ms_quick
