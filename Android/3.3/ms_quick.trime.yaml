@@ -1,6 +1,6 @@
 # 放到同文「用戶資料夾」根目錄，不要連 Android/3.3 子資料夾一起放
 # encoding: utf-8
-config_version: "3.7"
+config_version: "3.8"
 name: 傳統速成
 author: Kho
 
@@ -14,9 +14,9 @@ style:
   vertical_gap: 10
   horizontal_gap: 4
   round_corner: 8
-  key_height: 40
-  keyboard_height: 240
-  keyboard_height_land: 188
+  key_height: 42
+  keyboard_height: 260
+  keyboard_height_land: 204
   keyboard_padding: 3
   keyboard_padding_bottom: 0
   vertical_correction: -20
@@ -28,7 +28,7 @@ style:
   popup_width: 28
   popup_key_height: 26
   # 約等於實際鍵高，氣泡底貼齊鍵頂
-  popup_bottom_margin: 48
+  popup_bottom_margin: 52
 
 preedit:
   horizontal_padding: 0
@@ -287,6 +287,7 @@ preset_keys:
   redo: {label: 重做, send: Control+Shift+z}
   Keyboard_default: {label: 中, send: Eisu_toggle, select: .default}
   Keyboard_quick: {label: 中, send: Eisu_toggle, select: .default}
+  Keyboard_to_chinese: {label: 西, send: Eisu_toggle, select: .default}
   Keyboard_ms_quick_latin: {label: 西, send: Eisu_toggle, select: ms_quick_latin}
   Keyboard_ms_quick_number: {label: 數字, send: Eisu_toggle, select: ms_quick_number}
   Keyboard_ms_quick_symbols: {label: 符號, send: Eisu_toggle, select: ms_quick_symbols}
@@ -323,14 +324,15 @@ preset_keyboards:
   default:
     import_preset: ms_quick
   ms_quick:
+    reset_ascii_mode: true
     ascii_mode: 0
     ascii_keyboard: ms_quick_latin
     name: 傳統速成
     author: Kho
     width: 10
-    height: 40
-    keyboard_height: 240
-    keyboard_height_land: 188
+    height: 42
+    keyboard_height: 260
+    keyboard_height_land: 204
     lock: true
     keys:
     - {click: "1", long_click: "！"}
@@ -364,7 +366,7 @@ preset_keyboards:
     - {label: "大", click: quick_k, long_click: "'"}
     - {label: "中", click: quick_l, long_click: "\""}
     - {click: Right, long_click: End, width: 5}
-    - {click: simplification_switch, long_click: clipboard_window, width: 10}
+    - {width: 10}
     - {label: "符", click: quick_z, long_click: undo}
     - {label: "難", click: quick_x, long_click: cut}
     - {label: "金", click: quick_c, long_click: copy}
@@ -375,19 +377,20 @@ preset_keyboards:
     - {click: "/", long_click: "？", width: 8}
     - {click: BackSpace, width: 12}
     - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
-    - {click: Keyboard_ms_quick_latin, long_click: IME_switch, width: 14}
+    - {click: Keyboard_ms_quick_latin, label: 中, width: 14}
     - {click: space, width: 44}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
   ms_quick_latin:
+    reset_ascii_mode: true
     ascii_mode: 1
     name: 傳統速成西文
     author: Kho
     width: 10
-    height: 40
-    keyboard_height: 240
-    keyboard_height_land: 188
+    height: 42
+    keyboard_height: 260
+    keyboard_height_land: 204
     keys:
     - {click: "1", long_click: "!"}
     - {click: "2", long_click: "@"}
@@ -420,7 +423,7 @@ preset_keyboards:
     - {click: "k", long_click: "'"}
     - {click: "l", long_click: "\""}
     - {click: Right, long_click: End, width: 5}
-    - {click: Shift_L, send_bindings: false, width: 10}
+    - {click: Shift_L, long_click: Shift_L,send_bindings: false, width: 10}
     - {click: "z", long_click: undo}
     - {click: "x", long_click: cut}
     - {click: "c", long_click: copy}
@@ -431,18 +434,20 @@ preset_keyboards:
     - {click: "/", long_click: "?", width: 8}
     - {click: BackSpace, width: 12}
     - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
-    - {click: Keyboard_quick, long_click: IME_switch, width: 14}
+    - {click: Keyboard_to_chinese, width: 14}
     - {click: space, width: 44}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
   ms_quick_number:
+    reset_ascii_mode: true
+    ascii_mode: 0
     name: 傳統速成數字
     author: Kho
     width: 20
-    height: 40
-    keyboard_height: 240
-    keyboard_height_land: 188
+    height: 42
+    keyboard_height: 260
+    keyboard_height_land: 204
     keys:
     - {click: '+'}
     - {click: '1'}
@@ -465,13 +470,14 @@ preset_keyboards:
     - {click: '.'}
     - {click: Return}
   ms_quick_symbols:
+    reset_ascii_mode: true
+    ascii_mode: 0
     name: 符號
     author: kho
-    ascii_mode: 1
     width: 10
-    height: 40
-    keyboard_height: 240
-    keyboard_height_land: 188
+    height: 42
+    keyboard_height: 260
+    keyboard_height_land: 204
     keys:
     - {click: '1'}
     - {click: '2'}

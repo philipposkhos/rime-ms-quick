@@ -11,3 +11,7 @@ patch:
       states: [ 半形, 全形 ]
     - name: simplification
       states: [ 漢字, 汉字 ]
+  
+  key_binder/bindings:
+    - { when: has_menu, accept: space, send: Page_Down }
+    # 不再寫 Shift_L toggle ascii_mode，避免影響到手機切換
