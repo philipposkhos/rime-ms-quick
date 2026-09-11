@@ -22,12 +22,12 @@ style:
   vertical_correction: -20
   candidate_view_height: 28
   candidate_padding: 5
-  # 3.3 長按氣泡會依格子大小自動撐滿，要小必須縮寬高，不能只改字號
-  popup_text_size: 16
-  popup_height: 34
-  popup_width: 28
-  popup_key_height: 26
-  # 約等於實際鍵高，氣泡底貼齊鍵頂
+  # 3.3 長按氣泡會依格子大小自動撐滿，要改大小必須動寬高
+  popup_text_size: 22
+  popup_height: 40
+  popup_width: 40
+  popup_key_height: 35
+  # 從鍵底往上算，底貼齊鍵頂
   popup_bottom_margin: 52
 
 preedit:
