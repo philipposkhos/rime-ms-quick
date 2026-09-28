@@ -1,6 +1,6 @@
 # 放到同文「用戶資料夾」根目錄，不要連 Android/3.3 子資料夾一起放
 # encoding: utf-8
-config_version: "3.8"
+config_version: "3.10"
 name: 傳統速成
 author: Kho
 
@@ -52,7 +52,14 @@ window:
 
 tool_bar:
   button_spacing: 12
+  # 3.3 展開鈕寫死在左邊；收成 0 寬，改放到 buttons 第一顆（畫面最右）
+  primary_button:
+    size: [0, 0]
   buttons:
+    - foreground:
+        style: "ic@dots_horizontal"
+        font_size: 20
+      action: menu_keyboard
     - foreground:
         style: "🎨"
         font_size: 20
@@ -274,6 +281,7 @@ preset_keys:
   Menu: {label: 方案, send: MENU}
   IME_switch: {label: "🌐", send: LANGUAGE_SWITCH}
   Color_switch: {label: 配色, send: PROG_RED}
+  menu_keyboard: {label: 展開, send: function, command: menu_keyboard}
   fullshape_switch: {toggle: full_shape, send: SWITCH_CHARSET, states: [半, 全]}
   simplification_switch: {toggle: simplification, send: SWITCH_CHARSET, states: [漢, 汉]}
   clipboard_window: {label: 剪貼, send: function, command: clipboard_window, option: "0"}
@@ -292,6 +300,8 @@ preset_keys:
   Keyboard_ms_quick_number: {label: 數字, send: Eisu_toggle, select: ms_quick_number}
   Keyboard_ms_quick_symbols: {label: 符號, send: Eisu_toggle, select: ms_quick_symbols}
   space: {repeatable: false, functional: false, preview: "⎵", send: space}
+  # 鎖定 Shift 時，普通空白會變成 Shift+space，被按鍵綁定吃掉；西文改直接上屏
+  space_commit: {label: "⎵", preview: "⎵", commit: " "}
   quick_q: {label: "手", preview: "手", send: q}
   quick_w: {label: "田", preview: "田", send: w}
   quick_e: {label: "水", preview: "水", send: e}
@@ -435,7 +445,7 @@ preset_keyboards:
     - {click: BackSpace, width: 12}
     - {click: Keyboard_ms_quick_symbols, long_click: Keyboard_ms_quick_number, width: 14}
     - {click: Keyboard_to_chinese, width: 14}
-    - {click: space, width: 44}
+    - {click: space_commit, width: 44}
     - {click: ",", long_click: "~", width: 8}
     - {click: ".", long_click: "。", width: 8}
     - {click: Return, width: 12}
