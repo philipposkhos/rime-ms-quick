@@ -64,8 +64,8 @@ Linux (參考專案 : https://github.com/rime/ibus-rime )
 
 ### 授權
 
-本倉庫的 `ms_quick.dict.yaml`、`ms_quick.schema.yaml` 及本 README 中由 philipposkhos（Kho）持有並有權授出的內容，採用 [MIT License](LICENSE)。
+philipposkhos（Kho）自己整理、撰寫的內容採用 [MIT License](LICENSE)：`ms_quick.dict.yaml`、`ms_quick.schema.yaml`、`Android/3.1.3/trime.custom.yaml`、`Android/3.3/ms_quick.trime.yaml`、`Android/3.3/ms_quick.custom.yaml`，以及本 README。
 
 你可以依 MIT 條款使用、複製、修改及再分發上述內容，包括商業用途；分發副本或實質部分時，須保留版權聲明及 MIT 授權聲明。
 
-此授權不涵蓋 `Android/`、`opencc/` 或其他未列明的檔案，也不變更任何第三方內容原有的權利或授權條款；使用這些內容前請另行核對其來源及授權。
+`opencc/` 與 `Android/opencc/` 改自 [OpenCC](https://github.com/BYVoid/OpenCC)，維持 [Apache License 2.0](licenses/Apache-2.0.txt)，不納入上述 MIT。改動說明見各目錄的 `NOTICE`。

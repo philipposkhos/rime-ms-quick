@@ -1,0 +1,15 @@
+本倉庫的授權分成兩部分。
+
+MIT License（見 LICENSE）涵蓋 philipposkhos（Kho）自己整理、撰寫的檔案：
+
+- ms_quick.dict.yaml
+- ms_quick.schema.yaml
+- Android/3.1.3/trime.custom.yaml
+- Android/3.3/ms_quick.trime.yaml
+- Android/3.3/ms_quick.custom.yaml
+- README.md
+
+opencc/ 與 Android/opencc/ 改自 OpenCC（https://github.com/BYVoid/OpenCC），
+維持 Apache License, Version 2.0，不納入上面的 MIT。
+Apache 2.0 全文在 licenses/Apache-2.0.txt。
+各目錄的改動說明見該目錄的 NOTICE。

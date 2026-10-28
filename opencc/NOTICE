@@ -1,0 +1,7 @@
+此目錄的 t2s.json 來自 OpenCC（https://github.com/BYVoid/OpenCC）。
+OpenCC 原作者的權利仍在，授權為 Apache License, Version 2.0。
+全文見 ../licenses/Apache-2.0.txt。
+
+此目錄不適用倉庫根目錄的 MIT License。
+
+本倉庫沒有附上 t2s.json 所引用的 TSPhrases.ocd2、TSCharacters.ocd2。

@@ -1,0 +1,8 @@
+此目錄改自 OpenCC（https://github.com/BYVoid/OpenCC）。
+OpenCC 原作者的權利仍在，授權為 Apache License, Version 2.0。
+全文見 ../../licenses/Apache-2.0.txt。
+
+此目錄不適用倉庫根目錄的 MIT License。
+
+改動：把繁轉簡由一對多收成一對一（TSCharacters.txt），
+t2s.json 只使用這份字表，讓簡體模式下速成候選排位與繁體一致。
