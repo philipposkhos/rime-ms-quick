@@ -62,3 +62,10 @@ Linux (參考專案 : https://github.com/rime/ibus-rime )
 | Android 同文（3.1.3／3.3 皆此） | **`Android/opencc/`**（`t2s.json`、`TSCharacters.txt`） | 用戶資料夾底下的 `opencc/` |
 
 
+### 授權
+
+本倉庫的 `ms_quick.dict.yaml`、`ms_quick.schema.yaml` 及本 README 中由 philipposkhos（Kho）持有並有權授出的內容，採用 [MIT License](LICENSE)。
+
+你可以依 MIT 條款使用、複製、修改及再分發上述內容，包括商業用途；分發副本或實質部分時，須保留版權聲明及 MIT 授權聲明。
+
+此授權不涵蓋 `Android/`、`opencc/` 或其他未列明的檔案，也不變更任何第三方內容原有的權利或授權條款；使用這些內容前請另行核對其來源及授權。
